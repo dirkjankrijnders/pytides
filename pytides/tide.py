@@ -1,6 +1,6 @@
 from collections import OrderedDict
 import sys
-if sys.version.major > 2 and sys.version.minor > 9:
+if sys.version_info.major > 2 and sys.version_info.minor > 9:
 	from collections.abc import Iterable
 else:
 	from collections import Iterable
@@ -14,8 +14,8 @@ except ImportError: #Python3
 from datetime import datetime, timedelta
 import numpy as np
 from scipy.optimize import leastsq, fsolve
-from astro import astro
-import constituent
+from .astro import astro
+from . import constituent
 
 d2r, r2d = np.pi/180.0, 180.0/np.pi
 
