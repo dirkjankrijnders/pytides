@@ -1,4 +1,5 @@
 from collections import OrderedDict
+import sys
 if sys.version.major > 2 and sys.version.minor > 9:
 	from collections.abc import Iterable
 else:
