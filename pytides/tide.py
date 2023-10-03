@@ -1,5 +1,9 @@
+from collections import OrderedDict
+if sys.version.major > 2 and sys.version.minor > 9:
+	from collections.abc import Iterable
+else:
+	from collections import Iterable
 
-from collections import OrderedDict, Iterable
 from itertools import takewhile, count
 try:
 	from itertools import izip, ifilter
